@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: baseline;
+}
+
+#full-page {
+	background-color: #00A4AB;
+	color: white;
+	text-align: center;
+	font-family: "Palantino Linotype";
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+#title-and-search-container {
+	width: 50%;
+	margin: auto;
+}
+
+title {
+	/* just in case we want to style this later */
+}
+
+#search-bar {
+	margin: 1em;
+}
+
+#search-bar > .form-control {
+	color: #00A4AB;
+	font-size: 1.5em;
+}
+
+.button {
+	background-color: inherit;
+	color: white;
+	border: solid 1px white;
+	border-radius: 3px;
+	padding: 3px 4px 3px 4px;
+}
+
+#search-button {
+	/* just in case we want to style this later */
+}
+
+#results {
+	width: 80%;
+	margin: auto;
+}
+
+#results > h4 {
+	margin-top: 1.5em;
+}
+
+.result-box {
+	margin: 1em;
+	border: solid 1px white;
+	border-radius: 3px;
+	color: white;
+}
+
+.result-description {
+	margin: 1em;
+}
+
+.result-box > a {
+	color: white;
+}
+
+.result-box > a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#footer {
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: 15px auto 30px auto;
+	color: white;
+}
+
+#footer > a {
+	text-decoration: none;
+	color: white;
+}
+
+#footer > a:hover {
+	text-decoration: none;
+	color: white;
+}

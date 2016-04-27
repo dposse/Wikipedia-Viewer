@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	<title>Wikipedia Viewer</title>
+	<meta name="viewport" content="width=deivce-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="wikipediaviewer.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="full-page">
+	<div id="title-and-search-container">
+		<div id="title">
+			<h1>Search Wikipedia!</h1>
+		</div>
+
+		<div id="search-container">
+			<div id="search-bar">
+				<input type="text" class="form-control" id="search" onkeypress="pressEnter(event);" placeholder="Enter search here..."/>
+			</div>
+
+			<div id="search-button-container">
+				<button class="button" id="search-button" onclick="search();">Search <span class="fa fa-search"></span></button>
+				<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" id="random-page">
+					<button class="button" id="random-button">Random</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="results"></div>
+
+	<div id="footer">wikipedia viewer by <a href="http://codepen.io/dposse/">dposse</a></div>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="wikipediaviewer.js"></script>
+
+</body>
